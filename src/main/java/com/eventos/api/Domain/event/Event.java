@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.UUID;
 
 @Table(name = "event")
 @Entity
@@ -19,7 +20,7 @@ public class Event {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private UUID id;
     private String title;
     private String description;
     private String imgUrl;
